@@ -1,11 +1,11 @@
 package com.twitter.poruke;
 /**
  * 
- * @author Nikola Veselinovic
- * @version 1.0.0
  * Klasa sadrzi podatke o korisniku koji salje poruku,
  * kao i sam sadrzaj poruke.
- *
+ * @author Nikola Veselinovic
+ * @version 1.0.0
+ * 
  */
 public class TwitterPoruka {
 	/**
@@ -26,13 +26,13 @@ public class TwitterPoruka {
 	}
 	/**
 	 * Metoda postavlja korisnika na unetu vrednost.
-	 * @param String Prihvata parametar, koji predstavlja ime i prezime korisnika.
+	 * @param korisnik Prihvata parametar, koji predstavlja ime i prezime korisnika.
 	 * <br> Nedozvoljene vrednosti:
 	 * <ul>
 	 * <li>null
 	 * <li>prazan string
 	 * </ul> 
-	 * @throws RuntimeException Ukoliko se unesu nedozvoljene vrednosti.
+	 * @throws java.lang.RuntimeException Ukoliko se kao korisnik unese null vrednost ili prazan string
 	 */
 	public void setKorisnik(String korisnik) {
 		if (korisnik==null || korisnik.isEmpty())
@@ -49,14 +49,14 @@ public class TwitterPoruka {
 	}
 	/**
 	 * Metoda postavlja poruku na unetu vrednost.
-	 * @param String Prihvata parametar, koji predstavlja poruku korisnika.
+	 * @param poruka Prihvata parametar, koji predstavlja poruku korisnika.
 	 * <br> Nedozvoljene vrednosti:
 	 * <ul>
 	 * <li>null
 	 * <li>prazan string
 	 * <li>duzina poruke veca od 140 karaktera
 	 * </ul> 
-	 * @throws RuntimeException Ukoliko se unesu nedozvoljene vrednosti.
+	 * @throws java.lang.RuntimeException Ukoliko se kao poruka unese null vrednost, prazan string ili poruka sa vise od 140 karaktera
 	 */
 	public void setPoruka(String poruka) {
 		if (poruka==null || poruka.isEmpty() ||

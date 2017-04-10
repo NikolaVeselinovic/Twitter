@@ -3,10 +3,9 @@ import java.util.LinkedList;
 import com.twitter.poruke.TwitterPoruka;
 
 /**
- * 
+ * Lista poruka
  * @author Nikola Veselinovic
  * @version 1.0
- * Lista poruka
  *
  */
 public class Twitter {
@@ -41,7 +40,7 @@ public class Twitter {
 	 * @param maxBroj Uneti koliko zelite poruka da se vrati
 	 * @param tag Uneti koji tag zelite da sadrzi poruka
 	 * @return Vraca listu poruka koje odgovaraju opisu
-	 * @throws RuntimeException baca exception ako se ukao tag unese null ili prazan string
+	 * @throws java.lang.RuntimeException baca exception ako se kao tag unese null ili prazan string
 	 */
 	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 		if (tag==null || tag.isEmpty())
