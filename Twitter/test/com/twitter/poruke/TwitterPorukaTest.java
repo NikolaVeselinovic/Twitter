@@ -48,7 +48,7 @@ public class TwitterPorukaTest {
 	}
 	@Test (expected = java.lang.RuntimeException.class)
 	public void testSetPorukaLong() {
-		p.setPoruka(null);
+		p.setPoruka("vise od 140 karaktera 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111");
 	}
 	@Test
 	public void testSetPoruka() {
